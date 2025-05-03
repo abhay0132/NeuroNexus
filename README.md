@@ -1,70 +1,79 @@
-#Credit Card Fraud Detection#
-</br>
-This project detects fraudulent transactions using machine learning models. We handle class imbalance using SMOTE and compare the performance of Logistic Regression, Random Forest, and XGBoost classifiers.
-</br>
-##Dataset##
-</br>
-Source: Kaggle - Credit Card Fraud Detection
-</br>
-Size: 284,807 transactions with 492 frauds.
-</br>
-Features: 30 (anonymized principal components + Time, Amount, Class)
-</br>
-##Technologies Used##
-</br>
-1)Python
-</br>
-2)Jupyter Notebook
-</br>
-3)pandas, numpy
-</br>
-4)scikit-learn
-</br>
-5)imbalanced-learn (SMOTE)
-</br>
-6)xgboost
-</br>
-7)matplotlib, seaborn
-</br>
+# 🛡️ Credit Card Fraud Detection
+
+This project focuses on detecting fraudulent credit card transactions using various machine learning models. It handles the class imbalance problem using **SMOTE** and compares the performance of **Logistic Regression**, **Random Forest**, and **XGBoost** classifiers.
+
+---
+
+## 📁 Dataset
+
+- **Source**: [Kaggle - Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud)
+- **Transactions**: 284,807
+- **Fraud Cases**: 492 (highly imbalanced)
+- **Features**: 30 (including anonymized `V1-V28`, `Amount`, `Time`, and `Class`)
+
+---
+
+## ⚙️ Technologies Used
+
+- Python
+- Jupyter Notebook
+- pandas, numpy
+- scikit-learn
+- imbalanced-learn
+- xgboost
+- matplotlib, seaborn
+
+---
+
+## 🧠 Models Implemented
+
 | Model               | Description                                  |
-| ------------------- | -------------------------------------------- |
-| Logistic Regression | Simple baseline model                        |
-| Random Forest       | Ensemble model, generally high performance   |
-| XGBoost             | Gradient boosting model, powerful & scalable |
+|--------------------|----------------------------------------------|
+| Logistic Regression| Baseline linear classifier                   |
+| Random Forest       | Ensemble model with decision trees           |
+| XGBoost             | Gradient boosting classifier for performance |
 
-</br>
-##Evaluation Metrics##
-</br>
-Each model is evaluated using:
-</br>
-Accuracy
-</br>
-Precision
-</br>
-Recall
-</br>
-F1 Score
-</br>
-A comparison chart is plotted for visual analysis.
+---
 
-##Steps Performed##
-</br>
-1)Data loading and preprocessing
-</br>
-2)Feature scaling (Amount)
-</br>
-3)Class imbalance handling with SMOTE
-</br>
-4)Train/test split
-</br>
-5)Model training
+## 📊 Evaluation Metrics
 
-</br>
+- **Accuracy**
+- **Precision**
+- **Recall**
+- **F1-Score**
+
+All models are compared using the metrics above and visualized with a bar chart.
+
+---
+
+## ✅ Steps Performed
+
+1. **Data Loading** from CSV
+2. **Exploratory Data Analysis** (EDA) & Preprocessing
+3. **Feature Scaling** for the `Amount` column
+4. **Class Imbalance Handling** using SMOTE
+5. **Train/Test Split**
+6. **Model Training**: Logistic Regression, Random Forest, XGBoost
+7. **Performance Evaluation & Comparison**
+8. **Visualization of Model Scores**
+
+---
+
+## 📈 Sample Results
 
 | Model               | Accuracy | Precision | Recall | F1-Score |
-| ------------------- | -------- | --------- | ------ | -------- |
-| Logistic Regression | 0.94     | 0.93      | 0.94   | 0.93     |
-| Random Forest       | 0.99     | 0.99      | 0.99   | 0.99     |
-| XGBoost             | 0.99     | 0.99      | 0.99   | 0.99     |
+|--------------------|----------|-----------|--------|----------|
+| Logistic Regression| 0.94     | 0.93      | 0.94   | 0.93     |
+| Random Forest      | 0.99     | 0.99      | 0.99   | 0.99     |
+| XGBoost            | 0.99     | 0.99      | 0.99   | 0.99     |
 
-Performance evaluation and comparison
+*Note: Scores may vary slightly depending on random state and split.*
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/credit-card-fraud-detection.git
+   cd credit-card-fraud-detection
