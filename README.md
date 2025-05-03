@@ -1,4 +1,4 @@
-#Credit Card Fraud Detection
+#Credit Card Fraud Detection#
 </br>
 This project detects fraudulent transactions using machine learning models. We handle class imbalance using SMOTE and compare the performance of Logistic Regression, Random Forest, and XGBoost classifiers.
 </br>
@@ -60,6 +60,7 @@ A comparison chart is plotted for visual analysis.
 5)Model training
 
 </br>
+
 | Model               | Accuracy | Precision | Recall | F1-Score |
 | ------------------- | -------- | --------- | ------ | -------- |
 | Logistic Regression | 0.94     | 0.93      | 0.94   | 0.93     |
